@@ -1,0 +1,106 @@
+Enter password: ********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 44
+Server version: 8.0.21 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> mysql> select ascii('v');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql> select ascii('v')' at line 1
+mysql> select ascii('v');
++------------+
+| ascii('v') |
++------------+
+|        118 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select bit_length(1100);
++------------------+
+| bit_length(1100) |
++------------------+
+|               32 |
++------------------+
+1 row in set (0.04 sec)
+
+mysql> select char_length('java');
++---------------------+
+| char_length('java') |
++---------------------+
+|                   4 |
++---------------------+
+1 row in set (0.04 sec)
+
+mysql> select char(100);
++----------------------+
+| char(100)            |
++----------------------+
+| 0x64                 |
++----------------------+
+1 row in set (0.00 sec)
+
+mysql> select character_length('mysql');
++---------------------------+
+| character_length('mysql') |
++---------------------------+
+|                         5 |
++---------------------------+
+1 row in set (0.00 sec)
+
+mysql> select concat('ganapathi','vignesh');
++-------------------------------+
+| concat('ganapathi','vignesh') |
++-------------------------------+
+| ganapathivignesh              |
++-------------------------------+
+1 row in set (0.00 sec)
+
+mysql> select export_set(64,'1','0',' ',8);
++------------------------------+
+| export_set(64,'1','0',' ',8) |
++------------------------------+
+| 0 0 0 0 0 0 1 0              |
++------------------------------+
+1 row in set (0.04 sec)
+
+mysql> select find_in_set('a','a,n,n,a,m,a,a,l,a,i');
++----------------------------------------+
+| find_in_set('a','a,n,n,a,m,a,a,l,a,i') |
++----------------------------------------+
+|                                      1 |
++----------------------------------------+
+1 row in set (0.00 sec)
+
+mysql> select format('98.98',3);
++-------------------+
+| format('98.98',3) |
++-------------------+
+| 98.980            |
++-------------------+
+1 row in set (0.04 sec)
+
+mysql> select hex(16);
++---------+
+| hex(16) |
++---------+
+| 10      |
++---------+
+1 row in set (0.00 sec)
+
+mysql> elect strcmp('hello','hello');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'elect strcmp('hello','hello')' at line 1
+mysql> select strcmp('hello','hello');
++-------------------------+
+| strcmp('hello','hello') |
++-------------------------+
+|                       0 |
++-------------------------+
+1 row in set (0.04 sec)
+
+mysql>

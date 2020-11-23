@@ -1,0 +1,166 @@
+Enter password: ********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 45
+Server version: 8.0.21 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select abs(99.9);
++-----------+
+| abs(99.9) |
++-----------+
+|      99.9 |
++-----------+
+1 row in set (0.03 sec)
+
+mysql>  select acos(6);
++---------+
+| acos(6) |
++---------+
+|    NULL |
++---------+
+1 row in set (0.00 sec)
+
+mysql> select acos(0);
++--------------------+
+| acos(0)            |
++--------------------+
+| 1.5707963267948966 |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> select atan(1);
++--------------------+
+| atan(1)            |
++--------------------+
+| 0.7853981633974483 |
++--------------------+
+1 row in set (0.03 sec)
+
+mysql> select atan(0.45);
++--------------------+
+| atan(0.45)         |
++--------------------+
+| 0.4228539261329407 |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> select ceil(5.45);
++------------+
+| ceil(5.45) |
++------------+
+|          6 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select ceiling(1.34);
++---------------+
+| ceiling(1.34) |
++---------------+
+|             2 |
++---------------+
+1 row in set (0.00 sec)
+
+mysql> select conv('0010',2,16);
++-------------------+
+| conv('0010',2,16) |
++-------------------+
+| 2                 |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> select cos(60);
++---------------------+
+| cos(60)             |
++---------------------+
+| -0.9524129804151563 |
++---------------------+
+1 row in set (0.04 sec)
+
+mysql>  select degrees(pi());
++---------------+
+| degrees(pi()) |
++---------------+
+|           180 |
++---------------+
+1 row in set (0.00 sec)
+
+mysql> select exp(-0.5);
++--------------------+
+| exp(-0.5)          |
++--------------------+
+| 0.6065306597126334 |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> select floor(1.23);
++-------------+
+| floor(1.23) |
++-------------+
+|           1 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select ln(9/2);
++--------------------+
+| ln(9/2)            |
++--------------------+
+| 1.5040773967762742 |
++--------------------+
+1 row in set (0.03 sec)
+
+mysql> select log2(1);
++---------+
+| log2(1) |
++---------+
+|       0 |
++---------+
+1 row in set (0.00 sec)
+
+mysql> select 10000 mod 456;
++---------------+
+| 10000 mod 456 |
++---------------+
+|           424 |
++---------------+
+1 row in set (0.00 sec)
+
+mysql> select pi();
++----------+
+| pi()     |
++----------+
+| 3.141593 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select pi() /3;
++--------------+
+| pi() /3      |
++--------------+
+| 1.0471975512 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> select radians(180/30);
++---------------------+
+| radians(180/30)     |
++---------------------+
+| 0.10471975511965978 |
++---------------------+
+1 row in set (0.00 sec)
+
+mysql>  select sign(-38);
++-----------+
+| sign(-38) |
++-----------+
+|        -1 |
++-----------+
+1 row in set (0.03 sec)
+
+mysql>
